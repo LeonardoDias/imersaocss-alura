@@ -1,0 +1,119 @@
+  html {
+    height: 100%;
+  }
+
+  body {
+    color: #fff;
+    background-image: url(https://raw.githubusercontent.com/LeonardoDias/imersaocss-alura/master/img/background-matrix.jpg);
+    font-family: 'Fira Code', monospace;
+    background-color: rgba(0, 0, 0, .85);
+    background-size: auto 100vh;
+    height: 100%;
+    margin: 0;
+	padding: 0;
+	border: 0;
+  }
+
+  p {
+    margin-top: 0;   
+  }
+  
+  .background {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .85);
+    overflow-y: scroll;
+  }
+  
+  .section-title::before{
+    content: "home@leodias.dev:";
+    color: lime;
+  }
+  
+  .menu a,
+  .info a,
+  .content a{
+    text-decoration: none;
+    color: Yellow;
+  }
+  
+  .menu a:hover,
+  .info a:hover,
+  .content a:hover{
+    text-decoration: underline;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 300px;
+  }
+  
+  .menu li,
+  .info li{
+    list-style: none;
+    text-transform: lowercase;
+    color: lightyellow;
+  }
+  
+  .site-title,
+  .site-subtitle {
+    text-align: center;
+  }
+  
+  .content p {
+    color: #fff,
+  }
+  
+  .content {
+    border-style: dotted;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .info ul::before {
+    content: "{";
+  }
+  .info ul::after {
+    content: "}";
+  }
+  .info ul {
+    padding: 0;
+  }
+  .info li {
+    padding-left: 15px;
+  }
+  .info .rede::before,
+  .info a::before{
+    content: "\""  
+  }
+  .info .rede::after{
+    content: "\":"
+  }
+  .info a::after{
+    content: "\""  
+  }
+  
+  .section-title.last-title {
+    display: inline-block;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  span[contenteditable]{
+    outline: 0px solid transparent;
+    caret-color: transparent;
+  }
+  
+  span[contenteditable]::after{
+    content: "i";
+    background-color: #FFF;
+    animation: blinker 1s linear infinite;
+  }

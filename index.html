@@ -4,8 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leonardo Dias Conceição</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    Hello World
+<body onload="document.getElementById('editable').focus();">
+<div class=background>
+    <header>
+    <p class="section-title">~$ ls</p>
+    <nav class="menu">
+        <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Blog</a></li>
+        </ul>
+    </nav>
+    <p class="section-title">~$ /bin/bash about</p>
+    <div class="content">
+        <h1 class="site-title">Leonardo Dias Conceição</h1>
+        <h2 class="site-subtitle"> pseudo-frontend developer</h2>
+        <p>Esta página é um exercício da Imersão Hipster CSS provida pela Alura. Você pode encontrar mais informações em <a href="https://www.alura.com.br/artigos/imersao-css">https://www.alura.com.br/artigos/imersao-css.</a></p>
+    </div>
+    <p class="section-title">~$ curl https://leodias.dev/info.json</p>
+    <div class="info">
+        <ul>
+        <li>
+            <span class="rede">github</span>
+            <a href="https://github.com/LeonardoDias">https://github.com/LeonardoDias</a>
+        </li>
+        <li>
+            <span class="rede">twitter</span>
+            <a href="https://twitter.com/LeoDias914">https://twitter.com/LeoDias914</a>
+        </li>
+        </ul>
+    </div>
+    <p class="section-title last-title">~$</p>
+    <span contenteditable="true" id="editable"></span>
+    </header>
+</div>
 </body>
 </html>
