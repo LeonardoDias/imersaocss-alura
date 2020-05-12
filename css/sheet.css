@@ -138,6 +138,12 @@ figure.logo p {
     }
 }
 
+@media(max-width: 800px) {
+    figure.logo {
+        margin: 10px auto;
+    }
+}
+
 @media(min-width: 800px) {
     header {
         flex-direction: row;
