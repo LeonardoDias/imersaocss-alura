@@ -3,9 +3,19 @@ body {
     background-image: url('./../img/background-paper.jpg');
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 100vh;
     background-color: rgb(135, 138, 142);
     background-blend-mode: screen;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.background {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 header {
